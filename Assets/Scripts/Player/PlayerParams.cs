@@ -6,6 +6,13 @@ public class PlayerParams : MonoBehaviour
 {   
     public int talisman { get; set; }
 
+    public int maxTalisman;
+
+    void Start()
+    {
+        InitParams();
+    }
+
     public void InitParams()
     {
         talisman = 0;

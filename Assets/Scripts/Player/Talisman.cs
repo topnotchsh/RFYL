@@ -18,7 +18,7 @@ public class Talisman : MonoBehaviour
         this.talisman = talisman;
     }
 
-    private void OnTriggerEvent(Collider col)
+    private void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {

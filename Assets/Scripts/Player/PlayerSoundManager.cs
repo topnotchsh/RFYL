@@ -1,10 +1,10 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 //[RequireComponent(typeof(AudioSource))]
-//public class PlayerSoundManager : MonoBehaviour
-//{
+public class PlayerSoundManager : MonoBehaviour
+{
 
 //    public static SoundManager instance;
 //    AudioSource myAudio;
@@ -35,4 +35,4 @@
 //    {
         
 //    }
-//}
+}
