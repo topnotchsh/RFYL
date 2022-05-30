@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
@@ -21,6 +22,7 @@ public class UIManager : MonoBehaviour
     {
         playerTalisman.text = "x " + playerParams.talisman.ToString();
     }
+
 
     // Update is called once per frame
     void Update()

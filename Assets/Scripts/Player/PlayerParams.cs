@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerParams : MonoBehaviour
 {   
     public int talisman { get; set; }
-
     public int maxTalisman;
+
+    public GameManager gm;
 
     void Start()
     {
@@ -27,5 +28,12 @@ public class PlayerParams : MonoBehaviour
     {
         this.talisman += talisman;
         UIManager.instance.UpdatePlayerUI(this);
+        if(gm.talisman != 0 ) gm.EndGame();
     }
+
+    // 탈출구에 도착하면 엔딩 변수 설정 및 부적 개수 넘김
+
+    // 귀신을 만나면 --> 공격 변수 설정
+
+
 }
