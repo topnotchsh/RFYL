@@ -16,9 +16,12 @@ public class DoorOpen : MonoBehaviour
     {
         
     }
-    //void OnTriggerEnter(Colider other){
-    //    if(other.tag == 'Player'){
-    //        animator.SetBool("IsOpen", true);
-    //    }
-    //}
+
+    void OnTriggerEnter(Collider other){
+        if(other.tag == "Player"){
+            if (Input.GetButton("Fire1")){
+                animator.SetBool("IsOpen", true);
+            }
+        }
+    }
 }
