@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTalisman: 99
-  gm: {fileID: 0}
+  gm: {fileID: 1872536847}
 --- !u!1 &873635844
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +643,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 723926960, guid: 60270cf52a5e94998a5a335989159738, type: 3}
+      propertyPath: overridePointerCamera
+      value: 
+      objectReference: {fileID: 1622000644}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60270cf52a5e94998a5a335989159738, type: 3}
 --- !u!1 &1622000642
@@ -657,6 +661,7 @@ GameObject:
   - component: {fileID: 1622000644}
   - component: {fileID: 1622000643}
   - component: {fileID: 1622000647}
+  - component: {fileID: 1622000646}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -730,6 +735,22 @@ Transform:
   m_Father: {fileID: 505019954}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622000646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622000642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycasterEventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  maxRaycastHits: 64
 --- !u!114 &1622000647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,6 +1012,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTalisman: {fileID: 501175144}
+--- !u!1 &1773181900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4244005110087027518, guid: 651b57505beb9954297ad6d23d9bfa57,
+    type: 3}
+  m_PrefabInstance: {fileID: 4244005108674450790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1872536846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +1048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talisman: 0
-  talismanObject: {fileID: 0}
+  talismanObject: {fileID: 1773181900}
   pp: {fileID: 0}
 --- !u!4 &1872536848
 Transform:
