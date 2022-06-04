@@ -19,6 +19,7 @@ public class MouseCamera : MonoBehaviour
     private float camera_dist = 0f; //리그로부터 카메라까지의 거리
     public float camera_width = -10f; //가로거리
     public float camera_height = 4f; //세로거리
+    public float camera_fix = 3f;//레이케스트 후 리그쪽으로 올 거리
     Vector3 dir;
 
     // Start is called before the first frame update
@@ -96,6 +97,7 @@ public class MouseCamera : MonoBehaviour
         {
             //point로 옮긴다.
             MainCamera.transform.position = hitinfo.point;
+            //MainCamera.transform.Translate(dir * -1 * camera_fix);
         }
         else
         {
@@ -103,6 +105,7 @@ public class MouseCamera : MonoBehaviour
             MainCamera.transform.localPosition = Vector3.zero;
             //카메라위치까지의 방향벡터 * 카메라 최대거리 로 옮긴다.
             //MainCamera.transform.Translate(dir * camera_dist);
+            //MainCamera.transform.Translate(dir * -1 * camera_fix);
  
         }
     }
