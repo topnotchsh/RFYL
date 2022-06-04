@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 211b797324fdb2f44bc8f4d44edd4ba4, type: 2}
 --- !u!1001 &490638562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -274,7 +274,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &595272756
 MeshCollider:
@@ -407,6 +407,7 @@ MonoBehaviour:
   - {fileID: 1814709012}
   - {fileID: 1645898094}
   - {fileID: 556820560}
+  isSpawn: 
   ghost: {fileID: 1788025864}
 --- !u!1 &1054606115
 GameObject:
@@ -788,6 +789,7 @@ MonoBehaviour:
   maxHealth: 9
   curHealth: 9
   target: {fileID: 1315301194}
+  ghost: {fileID: 1788025864}
   isChase: 0
 --- !u!1 &1814709011
 GameObject:
