@@ -66,7 +66,7 @@ public class SampleGhost : MonoBehaviour
             // 공격 성공 -> 귀신 파괴
             StartCoroutine(OnDamage());
             // 공격 실패 -> 추격 시작
-            isChase = true;
+            isChase = false;
         }
         else
         {
