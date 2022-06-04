@@ -6,6 +6,9 @@ public class Attack : MonoBehaviour
 {
     public Animator anim;
     public GameObject target;
+
+    private float delay;
+    private float IdleTime = 1f;
     // Start is called before the first frame update
 
     void Awake(){
@@ -22,11 +25,13 @@ public class Attack : MonoBehaviour
         anim.SetBool("IsAttack", true);
         //SoundManager.instance.AttackSound();
         Destroy(target);
-        
-    }
 
-    public void PlayerAttacked() {
-        anim.SetBool("IsAttack", false);
+        delay += Time.deltaTime;
+        if (delay >= IdleTime)
+        {
+            anim.SetBool("IsAttack", false);
+        }
+        
     }
 
     // Update is called once per frame
