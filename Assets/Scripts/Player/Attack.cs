@@ -7,8 +7,10 @@ public class Attack : MonoBehaviour
     public Animator anim;
     public GameObject target;
 
-    private float delay;
-    private float IdleTime = 1f;
+    private float delay = 1.0f;
+    private float accumTime;
+    public bool isDelay;
+
     // Start is called before the first frame update
 
     void Awake(){
@@ -22,21 +24,28 @@ public class Attack : MonoBehaviour
         // 타겟 이미지를 n초 안에 클릭했으면
         //if (Input.GetButtonDown("Fire1"))
         
-        anim.SetBool("IsAttack", true);
-        //SoundManager.instance.AttackSound();
-        Destroy(target);
+        if(isDelay == false){
+            isDelay = true;
+            anim.SetBool("IsAttack", true);
+            //SoundManager.instance.AttackSound();
+            Destroy(target);
 
-        delay += Time.deltaTime;
-        if (delay >= IdleTime)
-        {
-            anim.SetBool("IsAttack", false);
         }
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(isDelay){
+            accumTime += Time.deltaTime;
+            if (accumTime >= delay)
+            {
+                anim.SetBool("IsAttack", false);
+                accumTime = 0.0f;
+                isDelay = false;
+                
+            }
+        }
     }
 }

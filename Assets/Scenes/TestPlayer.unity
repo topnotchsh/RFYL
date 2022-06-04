@@ -348,6 +348,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 4
   moveSpeed: 4
+  rot_speed: 100
+  Player: {fileID: 505019953}
+  MainCamera: {fileID: 1622000642}
+  camera_width: -10
+  camera_height: 4
 --- !u!114 &505019959
 MonoBehaviour:
   m_ObjectHideFlags: 0
