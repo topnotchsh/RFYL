@@ -11,6 +11,8 @@ public class Attack : MonoBehaviour
     private float accumTime;
     public bool isDelay;
 
+    //public SoundManager sm;
+
     // Start is called before the first frame update
 
     void Awake(){
@@ -27,7 +29,7 @@ public class Attack : MonoBehaviour
         if(isDelay == false){
             isDelay = true;
             anim.SetBool("IsAttack", true);
-            //SoundManager.instance.AttackSound();
+            //sm.AttackSound();
             Destroy(target);
 
         }

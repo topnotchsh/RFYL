@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: 770823ccdc0474093b17cb4862537b41
+  - enabled: 1
+    path: Assets/Scenes/Sample.unity
+    guid: 66c5b8e9e592b4e4892113cadd41fb9d
+  - enabled: 1
+    path: Assets/Scenes/BadEnding.unity
+    guid: 6814b2e08435e0c4980d0d4544ab5fdd
+  - enabled: 1
+    path: Assets/Scenes/HappyEnding.unity
+    guid: e8cb8a5413c9e464b9a57a787c50a96f
   m_configObjects: {}

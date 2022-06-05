@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Talisman : MonoBehaviour
 {
+    public static int numTalis;
     public float rotateSpeed = 180f;
+
+    //public SoundManager sm;
 
     [System.NonSerialized]
     public int talisman = 1;
-    void Start()
+    void Awake()
     {
-
+        //DontDestroyOnLoad(this);
     }
 
     public void SetTalismanValue(int talisman)
@@ -22,8 +25,9 @@ public class Talisman : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
+            numTalis++;
             col.gameObject.GetComponent<PlayerParams>().AddTalisman(talisman);
-            //SoundManager.instance.PlayPickUpSound();
+            //sm.PickUpSound();
             Destroy(gameObject);
         }
     }
