@@ -17,7 +17,7 @@ public class DoorOpen : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other){
+    public void OnTriggerEnter(Collider other){
         if(other.tag == "Player"){
             if (Input.GetButton("Fire1")){
                 animator.SetBool("IsOpen", true);
