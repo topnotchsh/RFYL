@@ -7,17 +7,16 @@ using UnityEngine;
 public class GameSoundManager : MonoBehaviour
 {
 
+    AudioSource playerSource;
+    public AudioClip audioHeart;
+    public AudioClip audioTalis;
+    public AudioClip audioWalk;
+    public AudioClip audioAttack;
 
-
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        this.playerSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

@@ -7,11 +7,17 @@ public class PlayerParams : MonoBehaviour
     public int talisman { get; set; }
     public int maxTalisman;
 
-    public GameManager gm;
+    AudioSource playerSource;
+    public AudioClip audioHeart;
+    public AudioClip audioTalis;
+    public AudioClip audioWalk;
+    public AudioClip audioAttack;
+    public AudioClip audioDamaged;
 
     void Start()
     {
         InitParams();
+        this.playerSource = GetComponent<AudioSource>();
     }
 
     public void InitParams()
@@ -28,12 +34,28 @@ public class PlayerParams : MonoBehaviour
     {
         this.talisman += talisman;
         UIManager.instance.UpdatePlayerUI(this);
-        if(gm.talisman != 0 ) gm.EndGame();
+        PlaySound("Item");
     }
 
-    // 탈출구에 도착하면 엔딩 변수 설정 및 부적 개수 넘김
-
-    // 귀신을 만나면 --> 공격 변수 설정
+    void PlaySound(string action)
+    {
+        switch (action)
+        {
+            case "Attack":
+                playerSource.clip = audioAttack;
+                break;
+            case "Item":
+                playerSource.clip = audioTalis;
+                break;
+            case "Heart":
+                playerSource.clip = audioHeart;
+                break;
+            case "Die":
+                playerSource.clip = audioDamaged;
+                break;
+        }
+        playerSource.Play();
+    }
 
 
 }
