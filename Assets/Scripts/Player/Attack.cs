@@ -31,7 +31,7 @@ public class Attack : MonoBehaviour
             anim.SetBool("IsAttack", true);
             //sm.AttackSound();
             Destroy(target);
-
+            Ghost.targetCount--;
         }
 
     }
