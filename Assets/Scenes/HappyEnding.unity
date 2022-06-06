@@ -283,11 +283,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicsource: {fileID: 814364591}
   btnsource: {fileID: 384417851}
-  playerSource: {fileID: 0}
-  audioHeart: {fileID: 0}
-  audioTalis: {fileID: 0}
-  audioWalk: {fileID: 0}
-  audioAttack: {fileID: 0}
 --- !u!4 &323710178
 Transform:
   m_ObjectHideFlags: 0
@@ -605,8 +600,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: OnClickStartGame
+      - m_Target: {fileID: 528194516}
+        m_MethodName: ReStartBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -720,6 +715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528194515}
   - component: {fileID: 528194514}
+  - component: {fileID: 528194516}
   m_Layer: 0
   m_Name: EndingManager
   m_TagString: Untagged
@@ -754,6 +750,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &528194516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528194513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc25fdf1aca55af4ba027d006975dbe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &590314095
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,8 +928,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: OnClickQuit
+      - m_Target: {fileID: 528194516}
+        m_MethodName: QuitBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1362,6 +1370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1897806498}
+  - component: {fileID: 1897806499}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -1377,13 +1386,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897806497}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1125, y: 725, z: -911.4}
+  m_LocalPosition: {x: 1125, y: 725, z: -550}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 369243807}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897806499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897806497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063374b646867fa4c9e5c660f5e46951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeed: 4
+  moveSpeed: 4
+  rot_speed: 50
+  Player: {fileID: 1897806497}
+  MainCamera: {fileID: 369243804}
+  camera_width: -10
+  camera_height: 4
+  camera_fix: 3
 --- !u!1 &1899901094
 GameObject:
   m_ObjectHideFlags: 0
