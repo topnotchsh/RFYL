@@ -31,9 +31,13 @@ public class PlayerParams : MonoBehaviour
         if(gm.talisman != 0 ) gm.EndGame();
     }
 
-    // 탈출구에 도착하면 엔딩 변수 설정 및 부적 개수 넘김
-
-    // 귀신을 만나면 --> 공격 변수 설정
+    // 사운드
+    void PlaySound(string action){
+        switch (action){
+            case "ATTACK":
+                audioSource.clip = audioAttack;
+        }
+    }
 
 
 }
