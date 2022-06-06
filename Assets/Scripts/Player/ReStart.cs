@@ -7,15 +7,11 @@ public class ReStart : MonoBehaviour
 {
     public void ReStartBtn()
     {
-        SceneManager.LoadScene("Start");
+        SceneManager.LoadScene(2);
     }
 
     public void QuitBtn()
     {
-#if UNITY_EDITOR
-    	UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+    	SceneManager.LoadScene(1);
     }
 }
