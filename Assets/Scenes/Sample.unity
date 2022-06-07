@@ -2099,7 +2099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &66068436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7684,30 +7684,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 301123025}
   player: {fileID: 1220037211}
-  target11: {fileID: 371191216}
-  target12: {fileID: 66298204}
-  target13: {fileID: 1229570650}
-  target21: {fileID: 335397258}
-  target22: {fileID: 985554730}
-  target23: {fileID: 456362202}
-  target31: {fileID: 289462926}
-  target32: {fileID: 1244324487}
-  target33: {fileID: 1826053022}
-  target41: {fileID: 749431818}
-  target42: {fileID: 54333315}
-  target43: {fileID: 1850725844}
-  target51: {fileID: 2043089135}
-  target52: {fileID: 962560206}
-  target53: {fileID: 962560206}
-  target61: {fileID: 1229114788}
-  target62: {fileID: 1605639872}
-  target63: {fileID: 528649875}
-  target71: {fileID: 1691739608}
-  target72: {fileID: 2095272871}
-  target73: {fileID: 1499604979}
-  target81: {fileID: 122408094}
-  target82: {fileID: 1755206581}
-  target83: {fileID: 1854184364}
+  target11: {fileID: 0}
+  target12: {fileID: 0}
+  target13: {fileID: 0}
+  target21: {fileID: 0}
+  target22: {fileID: 0}
+  target23: {fileID: 0}
+  target31: {fileID: 0}
+  target32: {fileID: 0}
+  target33: {fileID: 0}
+  target41: {fileID: 0}
+  target42: {fileID: 0}
+  target43: {fileID: 0}
+  target51: {fileID: 0}
+  target52: {fileID: 0}
+  target53: {fileID: 0}
+  target61: {fileID: 0}
+  target62: {fileID: 0}
+  target63: {fileID: 0}
+  target71: {fileID: 0}
+  target72: {fileID: 0}
+  target73: {fileID: 0}
+  target81: {fileID: 0}
+  target82: {fileID: 0}
+  target83: {fileID: 0}
   isDelay: 0
 --- !u!95 &301123025
 Animator:
@@ -13733,6 +13733,7 @@ MonoBehaviour:
   target2: {fileID: 54333315}
   target3: {fileID: 1850725844}
   player: {fileID: 1220037218}
+  playerObj: {fileID: 0}
   playerCount: 0
 --- !u!195 &552365671
 NavMeshAgent:
@@ -16288,12 +16289,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678189830}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.100000024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 301123023}
-  m_Father: {fileID: 1220037218}
+  m_Father: {fileID: 1030322577}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &678355109
@@ -24803,6 +24804,7 @@ MonoBehaviour:
   target2: {fileID: 1244324487}
   target3: {fileID: 1826053022}
   player: {fileID: 1220037218}
+  playerObj: {fileID: 0}
   playerCount: 0
 --- !u!195 &1016948659
 NavMeshAgent:
@@ -25029,6 +25031,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1384620530}
+  - {fileID: 678189831}
   m_Father: {fileID: 1220037218}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30438,6 +30441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1030322573}
   playerSpeed: 1
+  isMoving: 1
 --- !u!136 &1220037216
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -30475,15 +30479,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220037211}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -40.166, y: 0.873, z: -18.978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1030322577}
-  - {fileID: 678189831}
   m_Father: {fileID: 0}
   m_RootOrder: 37
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!81 &1220037220
 AudioListener:
   m_ObjectHideFlags: 0
@@ -32279,6 +32282,7 @@ MonoBehaviour:
   target2: {fileID: 985554730}
   target3: {fileID: 456362202}
   player: {fileID: 1220037218}
+  playerObj: {fileID: 0}
   playerCount: 0
 --- !u!195 &1272182513
 NavMeshAgent:
@@ -33663,6 +33667,7 @@ MonoBehaviour:
   target2: {fileID: 1605639872}
   target3: {fileID: 528649875}
   player: {fileID: 1220037218}
+  playerObj: {fileID: 0}
   playerCount: 0
 --- !u!195 &1328299040
 NavMeshAgent:
@@ -43166,6 +43171,7 @@ MonoBehaviour:
   target2: {fileID: 962560206}
   target3: {fileID: 1229114788}
   player: {fileID: 1220037218}
+  playerObj: {fileID: 0}
   playerCount: 0
 --- !u!195 &1708260725
 NavMeshAgent:
@@ -46467,6 +46473,7 @@ MonoBehaviour:
   target2: {fileID: 66298204}
   target3: {fileID: 1229570650}
   player: {fileID: 1220037218}
+  playerObj: {fileID: 0}
   playerCount: 0
 --- !u!195 &1848869191
 NavMeshAgent:
@@ -50499,6 +50506,7 @@ MonoBehaviour:
   target2: {fileID: 2095272871}
   target3: {fileID: 1499604979}
   player: {fileID: 1220037218}
+  playerObj: {fileID: 0}
   playerCount: 0
 --- !u!195 &1975597491
 NavMeshAgent:
@@ -51921,6 +51929,7 @@ MonoBehaviour:
   target2: {fileID: 1755206581}
   target3: {fileID: 1854184364}
   player: {fileID: 1220037218}
+  playerObj: {fileID: 0}
   playerCount: 0
 --- !u!195 &2008420478
 NavMeshAgent:
