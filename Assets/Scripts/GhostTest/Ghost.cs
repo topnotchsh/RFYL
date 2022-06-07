@@ -21,6 +21,7 @@ public class Ghost : MonoBehaviour
     public GameObject target2;
     public GameObject target3;
     public Transform player;
+    public GameObject playerObj;
 
     public static int targetCount;
     public int playerCount;
@@ -42,6 +43,7 @@ public class Ghost : MonoBehaviour
         mat = GetComponent<MeshRenderer>().material;
         nav = GetComponent<NavMeshAgent>();
         ghost = GetComponent<Transform>();
+        playerObj = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Start()
@@ -103,7 +105,7 @@ public class Ghost : MonoBehaviour
         // Vector3.Distance(transform.position, target.position) < contactDistance &&
         if (isFound)
         {
-            
+            playerObj.GetComponent<MovePlayer>().isMoving = false;
 
             // 플레이어가 귀신의 범위안에 들어옴
             // 5초 동안 대기 
@@ -140,6 +142,7 @@ public class Ghost : MonoBehaviour
             guide.text = "귀신을 피해 도망가라.";
 
             isChase = true;
+            playerObj.GetComponent<MovePlayer>().isMoving = true;
 
             int ghostCount = 2;
             while (ghostCount > 0)
@@ -150,6 +153,7 @@ public class Ghost : MonoBehaviour
 
             if (ghostCount == 0)
                 isChase = true;
+
         }
 
         if (Vector3.Distance(transform.position, player.position) < contactDistance)
@@ -164,6 +168,7 @@ public class Ghost : MonoBehaviour
     void OnTriggerEnter(Collider collider)
     {
         isFound = true; // 플레이어 감지 
+        
 
         if (collider.tag == "Player") // 플레이어 무기 감지
         {

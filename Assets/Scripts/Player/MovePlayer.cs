@@ -5,31 +5,45 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     public Camera mainCamera; //메인 카메라
-    public int moveSpeed = 2;
+    public int playerSpeed = 1;
+    public bool isMoving;
+    bool flag;
+
+    float delay = 10.0f;
+    float curTime;
+    //public GameObject ghost;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        isMoving = true;
+        //flag = true;
+        //ghost = GameObject.FindGameObjectWithTag("Ghost");
     }
 
     // Update is called once per frame
     void Update()
     {
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-        {
-            Vector3 dir = new Vector3(hit.point.x - transform.position.x, 0f, hit.point.z - transform.position.z); //방향 구하기
-            //curr_speed = Mathf.Clamp(curr_speed += aclrt * Time.deltaTime, 0f, maxSpeed); //가속
-            transform.rotation = Quaternion.LookRotation(dir); //방향 설정
+        //if(ghost.isFound) isMoving = false;
+        if(isMoving){
+            transform.position = transform.position + Camera.main.transform.forward * playerSpeed * Time.deltaTime;
+        } else {
+            transform.position = transform.position;
         }
-        //curr_speed = Mathf.Clamp(curr_speed -= aclrt* Time.deltaTime, 0f, maxSpeed); //감속
-        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-
-
-        //transform.position = transform.position + Camera.main.transform.forward * moveSpeed * Time.deltaTime;
+        
     }
 
+    //  private void OnTriggerEnter(Collider col)
+    //  {
+    //      if (col.gameObject.tag == "Ghost" && flag) {
+    //         isMoving = false;
+    //         curTime += Time.deltaTime;
+    //         if(curTime >= delay){
+    //             flag = false;
+    //             isMoving = true;
+    //             curTime = 0.0f;
+    //         }
+    //      }
 
+    //  }
 }
