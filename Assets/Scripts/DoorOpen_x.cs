@@ -6,11 +6,15 @@ public class DoorOpen_x : MonoBehaviour
 {
     public GameObject Door;
     public GameObject Player;
+    Vector3 DoorPos;
+    Vector3 newPos;
     //Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         //animator = GetComponent<Animator>();
+        DoorPos = Door.transform.position;
+    
     }
 
     // Update is called once per frame
@@ -25,8 +29,9 @@ public class DoorOpen_x : MonoBehaviour
             if (Input.GetMouseButtonUp(0)){
                 Debug.Log("get button");
                 //animator.SetBool("IsOpen", true);
-                Door.transform.Translate(new Vector3(0.5f, 0, 0)* Time.deltaTime);
-                //Door.transform.position = Door.transform.position + new Vector3(0.5f, 0, 0);
+                //transform.Translate(new Vector3(0.5f, 0, 0), Space.World);
+                Door.transform.position += new Vector3(0,0,1);
+                //Door.transform.position(newPos);
                 //Door.transform.Rotate(new Vector3(0, 90, 0));
                 Debug.Log("transform door");
             }
