@@ -37,7 +37,7 @@ public class PlayerParams : MonoBehaviour
         PlaySound("Item");
     }
 
-    void PlaySound(string action)
+    public void PlaySound(string action)
     {
         switch (action)
         {
@@ -50,8 +50,14 @@ public class PlayerParams : MonoBehaviour
             case "Heart":
                 playerSource.clip = audioHeart;
                 break;
+            case "Walk":
+                playerSource.clip = audioWalk;
+                break;
             case "Die":
                 playerSource.clip = audioDamaged;
+                break;
+            case "Stop":
+                playerSource.Stop();
                 break;
         }
         playerSource.Play();

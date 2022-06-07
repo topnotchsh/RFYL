@@ -6,6 +6,7 @@ public class Attack : MonoBehaviour
 {
     public Animator anim;
     public GameObject target;
+    public GameObject player;
 
     private float delay = 1.0f;
     private float accumTime;
@@ -29,6 +30,7 @@ public class Attack : MonoBehaviour
         if(isDelay == false){
             isDelay = true;
             anim.SetBool("IsAttack", true);
+            player.GetComponent<PlayerParams>().PlaySound("Attack");
             //sm.AttackSound();
             Destroy(target);
             Ghost.targetCount--;

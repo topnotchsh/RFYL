@@ -22,6 +22,8 @@ public class MouseCamera : MonoBehaviour
     public float camera_fix = 3f;//레이케스트 후 리그쪽으로 올 거리
     Vector3 dir;
 
+    bool isMoving = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class MouseCamera : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+        MoveSfx();
         //Jump();
     }
 
@@ -67,6 +70,29 @@ public class MouseCamera : MonoBehaviour
 
         // 이동량을 좌표에 반영
         transform.position += move * moveSpeed * Time.deltaTime;
+
+        
+    }
+
+    void MoveSfx() {
+        float move = Input.GetAxis("Horizontal") * moveSpeed;
+        body.velocity = new Vector3(move, body.velocity.y);
+
+        // 걷는 소리
+        if(body.velocity.x != 0 || body.velocity.y != 0){
+            isMoving = true;
+        } else isMoving = false;
+        
+        if(isMoving){
+            if(Player.GetComponent<AudioSource>().isPlaying){
+                Player.GetComponent<PlayerParams>().PlaySound("Walk");
+                Player.GetComponent<AudioSource>().loop = true;
+            }
+            
+        } else {
+            Player.GetComponent<PlayerParams>().PlaySound("Stop");
+            Player.GetComponent<AudioSource>().loop = false;
+        }
     }
 
 
