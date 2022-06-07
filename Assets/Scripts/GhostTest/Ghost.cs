@@ -121,11 +121,11 @@ public class Ghost : MonoBehaviour
     IEnumerator CountDown()
     {
         
-        int count = 5;
+        int count = 8;
         while (count > 0)
         {
             Debug.Log(count);
-            textCountdown.text = count.ToString();
+            textCountdown.text = (count-3).ToString();
             count--;
             yield return new WaitForSeconds(1);
         }
@@ -138,6 +138,7 @@ public class Ghost : MonoBehaviour
             target3.gameObject.SetActive(false);
 
             guide.text = "귀신을 피해 도망가라.";
+
             isChase = true;
         }
 
