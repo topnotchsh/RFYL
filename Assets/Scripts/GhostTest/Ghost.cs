@@ -79,7 +79,10 @@ public class Ghost : MonoBehaviour
             target3.gameObject.SetActive(false);
         }
 
-
+        if(!target1 && !target2 && !target3)
+        {
+            Destroy(gameObject);
+        }
 
     }
     
