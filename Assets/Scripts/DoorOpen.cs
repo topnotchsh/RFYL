@@ -23,7 +23,8 @@ public class DoorOpen : MonoBehaviour
         if(Player.tag == "Player"){
             if (Input.GetMouseButtonUp(0)){
                 //animator.SetBool("IsOpen", true);
-                Door.transform.Translate(new Vector3(0, 0, -0.5f));
+                //Door.transform.Translate(new Vector3(0, 0, -0.5f));
+                Destroy(Door);
             }
         }
     }

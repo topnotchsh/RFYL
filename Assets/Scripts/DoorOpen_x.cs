@@ -30,9 +30,11 @@ public class DoorOpen_x : MonoBehaviour
                 Debug.Log("get button");
                 //animator.SetBool("IsOpen", true);
                 //transform.Translate(new Vector3(0.5f, 0, 0), Space.World);
-                Door.transform.position += new Vector3(0,0,1);
+                //Door.transform.position += new Vector3(0,0,1);
+                //Door.transform.position = new Vector3(x, y, z);
                 //Door.transform.position(newPos);
                 //Door.transform.Rotate(new Vector3(0, 90, 0));
+                Destroy(Door);
                 Debug.Log("transform door");
             }
         }
