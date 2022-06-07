@@ -2429,8 +2429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1810663668}
-  target: {fileID: 0}
-  player: {fileID: 1810663666}
+  target: {fileID: 1567430017}
+  player: {fileID: 63244951}
   isDelay: 0
 --- !u!95 &1810663668
 Animator:

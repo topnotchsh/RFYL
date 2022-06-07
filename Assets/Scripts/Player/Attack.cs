@@ -22,16 +22,12 @@ public class Attack : MonoBehaviour
     }
 
     public void PlayerAttack(){
-        // 귀신과 마주치면
-
-        // 타겟 이미지를 n초 안에 클릭했으면
-        //if (Input.GetButtonDown("Fire1"))
+        target = GameObject.FindGameObjectWithTag("Target");
         
         if(isDelay == false){
             isDelay = true;
             anim.SetBool("IsAttack", true);
             player.GetComponent<PlayerParams>().PlaySound("Attack");
-            //sm.AttackSound();
             Destroy(target);
             Ghost.targetCount--;
         }

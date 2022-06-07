@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 54333316}
   m_Layer: 0
   m_Name: target (1)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2188,7 +2188,7 @@ GameObject:
   - component: {fileID: 66298205}
   m_Layer: 0
   m_Name: target (1)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2210,7 +2210,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 301123024}
           m_MethodName: PlayerAttack
           m_Mode: 1
           m_Arguments:
@@ -3325,7 +3325,7 @@ GameObject:
   - component: {fileID: 122408095}
   m_Layer: 0
   m_Name: target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5809,7 +5809,7 @@ GameObject:
   - component: {fileID: 223870896}
   m_Layer: 0
   m_Name: target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7281,7 +7281,7 @@ GameObject:
   - component: {fileID: 289462927}
   m_Layer: 0
   m_Name: target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7683,8 +7683,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 301123025}
-  target: {fileID: 1360903768}
-  player: {fileID: 0}
+  target: {fileID: 371191216}
+  player: {fileID: 1220037211}
   isDelay: 0
 --- !u!95 &301123025
 Animator:
@@ -8867,7 +8867,7 @@ GameObject:
   - component: {fileID: 335397259}
   m_Layer: 0
   m_Name: target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10113,7 +10113,7 @@ GameObject:
   - component: {fileID: 371191217}
   m_Layer: 0
   m_Name: target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10135,7 +10135,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 301123024}
           m_MethodName: PlayerAttack
           m_Mode: 1
           m_Arguments:
@@ -11368,7 +11368,7 @@ GameObject:
   - component: {fileID: 456362203}
   m_Layer: 0
   m_Name: target (2)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13370,7 +13370,7 @@ GameObject:
   - component: {fileID: 528649876}
   m_Layer: 0
   m_Name: target (2)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18184,7 +18184,7 @@ GameObject:
   - component: {fileID: 749431819}
   m_Layer: 0
   m_Name: target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23201,7 +23201,7 @@ GameObject:
   - component: {fileID: 962560207}
   m_Layer: 0
   m_Name: target (1)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23892,7 +23892,7 @@ GameObject:
   - component: {fileID: 985554731}
   m_Layer: 0
   m_Name: target (1)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30394,7 +30394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 1
   moveSpeed: 1
-  rot_speed: 80
+  rot_speed: 100
   Player: {fileID: 1220037211}
   MainCamera: {fileID: 1030322572}
   camera_width: -10
@@ -30562,7 +30562,7 @@ GameObject:
   - component: {fileID: 1229114789}
   m_Layer: 0
   m_Name: target (2)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30686,7 +30686,7 @@ GameObject:
   - component: {fileID: 1229570651}
   m_Layer: 0
   m_Name: target (2)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30708,7 +30708,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 301123024}
           m_MethodName: PlayerAttack
           m_Mode: 1
           m_Arguments:
@@ -31323,7 +31323,7 @@ GameObject:
   - component: {fileID: 1244324488}
   m_Layer: 0
   m_Name: target (1)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37974,7 +37974,7 @@ GameObject:
   - component: {fileID: 1499604980}
   m_Layer: 0
   m_Name: target (2)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40325,7 +40325,7 @@ GameObject:
   - component: {fileID: 1605639873}
   m_Layer: 0
   m_Name: target (1)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42667,7 +42667,7 @@ GameObject:
   - component: {fileID: 1691739609}
   m_Layer: 0
   m_Name: target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43845,7 +43845,7 @@ GameObject:
   - component: {fileID: 1755206582}
   m_Layer: 0
   m_Name: target (1)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45402,7 +45402,7 @@ GameObject:
   - component: {fileID: 1826053023}
   m_Layer: 0
   m_Name: target (2)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46463,7 +46463,7 @@ GameObject:
   - component: {fileID: 1850725845}
   m_Layer: 0
   m_Name: target (2)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46682,7 +46682,7 @@ GameObject:
   - component: {fileID: 1854184365}
   m_Layer: 0
   m_Name: target (2)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53234,7 +53234,7 @@ GameObject:
   - component: {fileID: 2043089136}
   m_Layer: 0
   m_Name: target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54693,7 +54693,7 @@ GameObject:
   - component: {fileID: 2095272872}
   m_Layer: 0
   m_Name: target (1)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

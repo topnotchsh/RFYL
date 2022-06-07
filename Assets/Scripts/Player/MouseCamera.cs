@@ -45,7 +45,7 @@ public class MouseCamera : MonoBehaviour
     void FixedUpdate()
     {
         Move();
-        MoveSfx();
+        //MoveSfx();
         //Jump();
     }
 
@@ -71,28 +71,31 @@ public class MouseCamera : MonoBehaviour
         // 이동량을 좌표에 반영
         transform.position += move * moveSpeed * Time.deltaTime;
 
+        // // 걷는 소리
+        // body.velocity = move;
+
+        // if(body.velocity.x != 0 || body.velocity.y != 0){
+        //     isMoving = true;
+        // } else isMoving = false;
+        
+        // if(isMoving){
+        //     if(Player.GetComponent<AudioSource>().isPlaying){
+        //         Player.GetComponent<PlayerParams>().PlaySound("Walk");
+        //         //Player.GetComponent<AudioSource>().loop = true;
+        //     }
+            
+        // } else {
+        //     Player.GetComponent<PlayerParams>().PlaySound("Stop");
+        //     //Player.GetComponent<AudioSource>().loop = false;
+        // }
         
     }
 
     void MoveSfx() {
-        float move = Input.GetAxis("Horizontal") * moveSpeed;
+        float move = moveSpeed * Input.GetAxis("Vertical") + moveSpeed * Input.GetAxis("Horizontal");
         body.velocity = new Vector3(move, body.velocity.y);
 
-        // 걷는 소리
-        if(body.velocity.x != 0 || body.velocity.y != 0){
-            isMoving = true;
-        } else isMoving = false;
         
-        if(isMoving){
-            if(Player.GetComponent<AudioSource>().isPlaying){
-                Player.GetComponent<PlayerParams>().PlaySound("Walk");
-                Player.GetComponent<AudioSource>().loop = true;
-            }
-            
-        } else {
-            Player.GetComponent<PlayerParams>().PlaySound("Stop");
-            Player.GetComponent<AudioSource>().loop = false;
-        }
     }
 
 

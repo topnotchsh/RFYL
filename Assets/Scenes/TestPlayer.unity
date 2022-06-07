@@ -330,10 +330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba67059e8b077c42bdd7991d8f4ca76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveType: 1
-  speed: 1
-  damping: 3
-  mainCamera: {fileID: 1622000644}
 --- !u!114 &505019958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +349,7 @@ MonoBehaviour:
   MainCamera: {fileID: 1622000642}
   camera_width: -10
   camera_height: 4
+  camera_fix: 3
 --- !u!114 &505019959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +363,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTalisman: 99
-  gm: {fileID: 1872536847}
+  audioHeart: {fileID: 0}
+  audioTalis: {fileID: 0}
+  audioWalk: {fileID: 0}
+  audioAttack: {fileID: 0}
+  audioDamaged: {fileID: 0}
 --- !u!82 &505019960
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1162,6 +1163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 765317588}
   target: {fileID: 1002629935}
+  player: {fileID: 505019953}
+  isDelay: 0
 --- !u!1 &873635844
 GameObject:
   m_ObjectHideFlags: 0
