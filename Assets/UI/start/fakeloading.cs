@@ -8,7 +8,7 @@ public class fakeloading : MonoBehaviour
 {
     public Text text_Loading;
     public Image image_fill;
-    private float time_loading = 5;
+    private float time_loading = 10;
     private float time_current;
     private float time_start;
     private bool isEnded = true;
