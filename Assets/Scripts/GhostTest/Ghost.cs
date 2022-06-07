@@ -140,13 +140,25 @@ public class Ghost : MonoBehaviour
             guide.text = "귀신을 피해 도망가라.";
 
             isChase = true;
+
+            int ghostCount = 2;
+            while (ghostCount > 0)
+            {
+                ghostCount--;
+                yield return new WaitForSeconds(1);
+            }
+
+            if (ghostCount == 0)
+                isChase = true;
         }
 
         if (Vector3.Distance(transform.position, player.position) < contactDistance)
         {
             SceneManager.LoadScene("BadEnding");
         }
+
     }
+        
 
     // 플레이어에게 공격받음
     void OnTriggerEnter(Collider collider)
