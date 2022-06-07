@@ -13705,7 +13705,7 @@ MonoBehaviour:
   contactDistance: 1
   moveSpeed: 2.52
   textCountdown: {fileID: 1387445196}
-  guide: {fileID: 1387445196}
+  guide: {fileID: 1710895561}
   target1: {fileID: 749431818}
   target2: {fileID: 54333315}
   target3: {fileID: 1850725844}
@@ -24775,7 +24775,7 @@ MonoBehaviour:
   contactDistance: 1
   moveSpeed: 2.52
   textCountdown: {fileID: 1387445196}
-  guide: {fileID: 1387445196}
+  guide: {fileID: 1710895561}
   target1: {fileID: 289462926}
   target2: {fileID: 1244324487}
   target3: {fileID: 1826053022}
@@ -32236,7 +32236,7 @@ MonoBehaviour:
   contactDistance: 1
   moveSpeed: 2.52
   textCountdown: {fileID: 1387445196}
-  guide: {fileID: 1387445196}
+  guide: {fileID: 1710895561}
   target1: {fileID: 335397258}
   target2: {fileID: 985554730}
   target3: {fileID: 456362202}
@@ -33620,7 +33620,7 @@ MonoBehaviour:
   contactDistance: 1
   moveSpeed: 2.52
   textCountdown: {fileID: 1387445196}
-  guide: {fileID: 1387445196}
+  guide: {fileID: 1710895561}
   target1: {fileID: 223870895}
   target2: {fileID: 1605639872}
   target3: {fileID: 528649875}
@@ -43123,7 +43123,7 @@ MonoBehaviour:
   contactDistance: 1
   moveSpeed: 2.52
   textCountdown: {fileID: 1387445196}
-  guide: {fileID: 1387445196}
+  guide: {fileID: 1710895561}
   target1: {fileID: 2043089135}
   target2: {fileID: 962560206}
   target3: {fileID: 1229114788}
@@ -46424,7 +46424,7 @@ MonoBehaviour:
   contactDistance: 1
   moveSpeed: 2.52
   textCountdown: {fileID: 1387445196}
-  guide: {fileID: 1387445196}
+  guide: {fileID: 1710895561}
   target1: {fileID: 371191216}
   target2: {fileID: 66298204}
   target3: {fileID: 1229570650}
@@ -50456,7 +50456,7 @@ MonoBehaviour:
   contactDistance: 1
   moveSpeed: 2.52
   textCountdown: {fileID: 1387445196}
-  guide: {fileID: 1387445196}
+  guide: {fileID: 1710895561}
   target1: {fileID: 1691739608}
   target2: {fileID: 2095272871}
   target3: {fileID: 1499604979}
@@ -51878,7 +51878,7 @@ MonoBehaviour:
   contactDistance: 1
   moveSpeed: 2.52
   textCountdown: {fileID: 1387445196}
-  guide: {fileID: 1387445196}
+  guide: {fileID: 1710895561}
   target1: {fileID: 122408094}
   target2: {fileID: 1755206581}
   target3: {fileID: 1854184364}

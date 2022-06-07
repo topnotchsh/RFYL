@@ -121,11 +121,11 @@ public class Ghost : MonoBehaviour
     IEnumerator CountDown()
     {
         
-        int count = 8;
+        int count = 15;
         while (count > 0)
         {
             Debug.Log(count);
-            textCountdown.text = (count-3).ToString();
+            textCountdown.text = count.ToString();
             count--;
             yield return new WaitForSeconds(1);
         }
