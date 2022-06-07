@@ -20,4 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HappyEnding.unity
     guid: e8cb8a5413c9e464b9a57a787c50a96f
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 46b994d2a9adc487e8dab43c59679f46,
+      type: 2}
