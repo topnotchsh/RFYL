@@ -55,15 +55,17 @@ public class Attack : MonoBehaviour
 
     public void PlayerAttack(){
         target = GameObject.FindGameObjectWithTag("Target");
-        if (Input.GetButton("Fire1")) {
-            if(isDelay == false){
-                isDelay = true;
-                anim.SetBool("IsAttack", true);
-                player.GetComponent<PlayerParams>().PlaySound("Attack");
-                Destroy(target);
-                Ghost.targetCount--;
-            }
+
+        if(isDelay == false){
+            isDelay = true;
+            anim.SetBool("IsAttack", true);
+            player.GetComponent<PlayerParams>().PlaySound("Attack");
+            Destroy(target);
+            Ghost.targetCount--;
         }
+        // if (Input.GetButton("Fire1")) {
+            
+        // }
         
 
     }
