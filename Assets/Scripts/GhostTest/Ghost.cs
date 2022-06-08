@@ -83,6 +83,7 @@ public class Ghost : MonoBehaviour
 
         if(!target1 && !target2 && !target3)
         {
+            playerObj.GetComponent<MovePlayer>().isMoving = true;
             Destroy(gameObject);
         }
 
@@ -143,6 +144,8 @@ public class Ghost : MonoBehaviour
 
             isChase = true;
             playerObj.GetComponent<MovePlayer>().isMoving = true;
+            //도망갈때만 속도 증가
+            //playerObj.GetComponent<MovePlayer>().playerSpeed = 3;
 
             int ghostCount = 2;
             while (ghostCount > 0)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     public Animator anim;
-    GameObject target;
+    public GameObject target;
     public GameObject player;
 
     public GameObject target11;
@@ -55,16 +55,19 @@ public class Attack : MonoBehaviour
 
     public void PlayerAttack(){
         target = GameObject.FindGameObjectWithTag("Target");
-        
-        if(isDelay == false){
-            isDelay = true;
-            anim.SetBool("IsAttack", true);
-            player.GetComponent<PlayerParams>().PlaySound("Attack");
-            Destroy(target);
-            Ghost.targetCount--;
+        if (Input.GetButton("Fire1")) {
+            if(isDelay == false){
+                isDelay = true;
+                anim.SetBool("IsAttack", true);
+                player.GetComponent<PlayerParams>().PlaySound("Attack");
+                Destroy(target);
+                Ghost.targetCount--;
+            }
         }
+        
 
     }
+
 
     // Update is called once per frame
     void Update()
