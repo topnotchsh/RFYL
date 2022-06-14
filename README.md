@@ -18,6 +18,10 @@
 
 ## 인게임 이미지
 
+## 개발 환경
+`Unity 2019.4.3`
+`GVR SDK for Unity v1.200.1`
+`Cardboard SDK`
 ## Team KINVR
 강다연 - [@DayeonKang99](https://github.com/DayeonKang99)<br>
 이보연 - [@btothey99](https://github.com/btothey99)<br>
